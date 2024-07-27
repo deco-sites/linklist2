@@ -2,12 +2,64 @@
   "name": "Home",
   "path": "/",
   "sections": [
-    { "__resolveType": "Header" },
-    { "__resolveType": "site/sections/Social.tsx" },
-    { "__resolveType": "site/sections/Links.tsx" },
-    { "__resolveType": "site/sections/Image.tsx" },
-    { "__resolveType": "site/sections/Links.tsx" },
-    { "__resolveType": "Footer" }
+    {
+      "__resolveType": "site/sections/Header.tsx",
+      "title": "<p>Um belo pôr do sol</p>",
+      "description": "<p>Relaxe observando essa linda paisagem</p>",
+      "logo": {
+        "img": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12024/9a93fb58-5285-4543-b177-c2cc2bc362f3"
+      }
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Social.tsx",
+            "social": [
+              {
+                "label": "Instagram"
+              }
+            ]
+          },
+          "rule": {
+            "__resolveType": "website/matchers/device.ts",
+            "mobile": true
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/Social.tsx",
+            "social": [
+              {
+                "label": "Discord"
+              }
+            ]
+          },
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Links.tsx",
+      "links": [
+        {
+          "icon": "share",
+          "label": "Primeiro link",
+          "href": "/"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Image.tsx",
+      "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12024/e8d6c932-3181-4e11-89e7-237ebbb5abf2",
+      "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12024/e8d6c932-3181-4e11-89e7-237ebbb5abf2"
+    },
+    {
+      "__resolveType": "Footer"
+    }
   ],
   "__resolveType": "website/pages/Page.tsx"
 }

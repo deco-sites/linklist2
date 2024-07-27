@@ -68,5 +68,17 @@
   "/.deco/blocks/Footer.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Footer.tsx"
+  },
+  "/.deco/blocks/Preview%20%2Fsections%2FImage.tsx.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Image.tsx"
+  },
+  "/.deco/blocks/Meu%20tema%20teste.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Theme/Theme.tsx"
+  },
+  "/.deco/blocks/Preview%20website%2Floaders%2Fasset.ts.json": {
+    "blockType": "loaders",
+    "__resolveType": "website/loaders/asset.ts"
   }
 }
